@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css file link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="{{ url_for('static', filename='/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='/css/style.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='/css/animate.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='font/css/fontawesome.min.css')}}" rel="stylesheet" />
+    <title>Gym Trainer</title>
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+     <!-- Js file link -->
+     <script src="static/js/jquery.js"></script>
+     <script src="static/js/bootstrap.min.js"></script>
+     <script src="static/js/script.js"></script>
+     <script src="static/js/wow.min.js"></script>
+     <!-- Js file link -->
+</body>
+</html>

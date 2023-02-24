@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="contaier">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <table class="table">
+                {% for item in mydata %}
+                <tr>
+                    <td>{{item['Name']}}</td>
+                    <td>{{item['Age']}}</td>
+                    <td>{{item['City']}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+{% endblock %}

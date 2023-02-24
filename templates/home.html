@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% include 'navbar.html' %}
+{% block content %}
+
+
+<div class="card vh-30" style="width: 23rem;" align="center">
+    {% if 'login' in session %}
+    <img class="card-img-top" src="static/upload/{{session.image}}" alt="Card image cap"  width="50" height="300">
+    <div class="card-body">
+      <h5 class="card-title">Name: {{session.username}}</h5>
+      <h5 class="card-title">Email: {{session.email}}</h5>
+      <h5 class="card-title">Age: {{session.age}}</h5>
+      <a href="/update" class="btn btn-primary" type="submit">Edit</a>
+    </div>
+  </div>
+  {% endif %}
+
+{% endblock %}

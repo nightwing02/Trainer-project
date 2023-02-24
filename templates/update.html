@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% include 'navbar.html' %}
+
+{% block content %}
+<h3 align="center">Update</h3><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 card ">
+                <h4 class="text-center text-danger"> Edit Info </h4>
+                <!-- for insert the file we use (enctype) without this u can't add file  -->
+                <form action="/update" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="xid"/>
+                    <label> Name </label>
+                    <input type="text" class="form-control" name="xname"/>
+                    <label> Phone </label>
+                    <input type="tel" class="form-control"  name="xphone"/>
+                    <label> Age </label>
+                    <input type="age" class="form-control"  name="xage"/>
+                    <label> Email </label>
+                    <input type="email" class="form-control" name="xmail" placeholder="xyz@gmail.com"/>
+                    <label> Upload  </label>
+                    <input type="file" name="xfile" class="form-control" accept="image/png, image/gif, image/jpeg" /><br/>
+                    <input type="submit" class="btn btn-danger" value="Register"><br>
+                </form> 
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+{% endblock %}

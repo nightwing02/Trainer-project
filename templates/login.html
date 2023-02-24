@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<style>
+    .bg-image-vertical {
+position: relative;
+overflow: hidden;
+background-repeat: no-repeat;
+background-position: right center;
+background-size: auto 100%;
+}
+
+@media (min-width: 1025px) {
+.h-custom-2 {
+height: 100%;
+}
+}
+</style>
+
+<section class="vh-80" style="background-color:burlywood;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 text-black">
+  
+          <div class="px-5 ms-xl-4">     
+            <i class="fa-solid fa-dumbbell fa-3x p-3" style="color: #a20bb6;"></i>
+            <span class="h1 fw-bold mb-0">Skylight Gym</span>
+          </div>
+  
+          <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+  
+            <form style="width: 23rem;" action="/auth" method="post" >
+  
+              <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
+  
+              <div class="form-outline mb-4">
+                <!-- <label class="form-label" for="form2Example18">Email address</label> -->
+                <input type="email" id="form2Example18" class="form-control form-control-lg" name="xmail" placeholder="Email"/>
+                
+              </div>
+  
+              <div class="form-outline mb-4">
+                <input type="password" id="form2Example28" class="form-control form-control-lg" name="xpas" placeholder="Password" />
+                <!-- <label class="form-label" for="form2Example28">Password</label> -->
+              </div>
+  
+              <div class="pt-1 mb-4">
+                <button class="btn btn-info btn-lg btn-block" type="submit">Login</button>
+              </div>
+  
+              <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
+              <p>Don't have an account? <a href="/registration" class="link-info">Register here</a></p>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+        <div class="col-sm-6 px-0 my-2 d-none d-sm-block">
+          <img src="https://c4.wallpaperflare.com/wallpaper/333/891/809/pose-muscle-muscle-training-biceps-hd-wallpaper-preview.jpg"
+            alt="Login image" class="w-100 vh-100" style="object-fit:contain; object-position: left;">
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
